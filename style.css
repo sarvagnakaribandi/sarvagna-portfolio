@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1e293b;
+    position:sticky;
+    top:0;
+}
+
+.logo h2{
+    color:#38bdf8;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:70px 50px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text h3{
+    margin-top:10px;
+}
+
+.hero-text p{
+    margin-top:20px;
+}
+
+.hero-image img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    object-fit:cover;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#06b6d4;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#0891b2;
+}
+
+.card{
+    background:#1e293b;
+    margin:25px;
+    padding:25px;
+    border-radius:15px;
+}
+
+.card h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+.card a{
+    color:white;
+    text-decoration:none;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    background:#1e293b;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .menu{
+        margin-top:15px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-image{
+        margin-top:30px;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+}
